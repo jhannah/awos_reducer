@@ -12,7 +12,7 @@ else {
 function releasetheKraken() {
   // The Kraken has been released, master!
   // Yes, I'm being childish. Place your code here 
-  alert("j rules!");
+  alert("krak j rules!");
 }
 
 
