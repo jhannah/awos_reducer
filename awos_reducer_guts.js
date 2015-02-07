@@ -12,8 +12,8 @@ else {
 function releasetheKraken() {
   // The Kraken has been released, master!
   // Yes, I'm being childish. Place your code here 
-  alert("kr j rules!");
-  $("td").toggle(function(){
+  alert("krk j rules!");
+  $("h1").toggle(function(){
     $(this).css('background-color','blue')
   },function(){
     $(this).css('background-color','green')
