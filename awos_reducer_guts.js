@@ -18,11 +18,11 @@ function releasetheKraken() {
       'IDP', 'K51', 'K61', 'K88', 'OIN', 'PTT', 'UKL', 'GCM', 'OKM', 'ADM', 'AXS',
       'WDG', 'RIL', 'RBX', 'SGU', 'HHF', 'DUX', 'HRX', 'TX13/BPC', 'PPA', 'PYX', 'PVW'
   ];
-  $("table[id='grid'] td").addClass("NUKE");
-  $("table[id='sortable'] tr").addClass("NUKE");
+  $("table#grid td").addClass("NUKE");
+  $("table#sortable tr").addClass("NUKE");
   sites.forEach(function(site) { 
-    $("table[id='grid'] td[title^='" + site + "']").removeClass("NUKE");
-    $("table[id='sortable'] td[id='" + site + "']").parent("tr").removeClass("NUKE");
+    $("table#grid td[title^='" + site + "']").removeClass("NUKE");
+    $("table#sortable td#" + site).parent("tr").removeClass("NUKE");
   });
   $(".NUKE").css("display", "none");
 }
