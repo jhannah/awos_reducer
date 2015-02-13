@@ -22,7 +22,7 @@ function releasetheKraken() {
   $("table#sortable tr").addClass("NUKE");
   sites.forEach(function(site) { 
     $("table#grid td[title^='" + site + "']").removeClass("NUKE");
-    $("table#sortable td#" + site).parent("tr").removeClass("NUKE");
+    $("table#sortable td[id='"" + site + '']").parent("tr").removeClass("NUKE");
   });
   $(".NUKE").css("display", "none");
 }
