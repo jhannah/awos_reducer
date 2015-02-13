@@ -12,14 +12,19 @@ else {
 function releasetheKraken() {
   // The Kraken has been released, master!
   // Yes, I'm being childish. Place your code here 
-  alert("krk j rules!");
-  $("h1").toggle(function(){
-    $(this).css('background-color','blue')
-  },function(){
-    $(this).css('background-color','green')
+  var sites = [ 
+      '1V6', '2V5', '33V', '4V1', 'AIB', 'BDU', 'BJC', 'EIK', 'FTG', 'FTG', 'RCV',
+      'FLY', 'HEQ', 'LMO', '4V0', 'SBS', 'STK', 'STK', 'TEX', '5K2', 'GCK', 'IDP',
+      'IDP', 'K51', 'K61', 'K88', 'OIN', 'PTT', 'UKL', 'GCM', 'OKM', 'ADM', 'AXS',
+      'WDG', 'RIL', 'RBX', 'SGU', 'HHF', 'DUX', 'HRX', 'TX13/BPC', 'PPA', 'PYX', 'PVW'
+  ];
+  $("table[id='grid'] td").addClass("NUKE");
+  $("table[id='sortable'] tr").addClass("NUKE");
+  sites.forEach(function(site) { 
+    $("table[id='grid'] td[title^='" + site + "']").removeClass("NUKE");
+    $("table[id='sortable'] td[id='" + site + "']").parent("tr").removeClass("NUKE");
   });
-
-
+  $(".NUKE").css("display", "none");
 }
 
 
