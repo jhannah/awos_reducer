@@ -12,11 +12,9 @@ else {
 function releasetheKraken() {
   // The Kraken has been released, master!
   // Yes, I'm being childish. Place your code here 
-  var sites = [ 
-      '1V6', '2V5', '33V', '4V1', 'AIB', 'BDU', 'BJC', 'EIK', 'FTG', 'FTG', 'RCV',
-      'FLY', 'HEQ', 'LMO', '4V0', 'SBS', 'STK', 'STK', 'TEX', '5K2', 'GCK', 'IDP',
-      'IDP', 'K51', 'K61', 'K88', 'OIN', 'PTT', 'UKL', 'GCM', 'OKM', 'ADM', 'AXS',
-      'WDG', 'RIL', 'RBX', 'SGU', 'HHF', 'DUX', 'HRX', 'TX13/BPC', 'PPA', 'PYX', 'PVW'
+  var sites = [
+    '9V9', 'AEL', 'BDH', 'BEC', 'BJI', 'DTL', 'EVM', 'EZZ', 'FFM', 'IDP',
+    'K61', 'K88', 'MOX', 'ONA', 'OWI', 'RRT', 'SBD'
   ];
   $("table#grid td").addClass("NUKE");
   $("table#sortable tr").addClass("NUKE");
